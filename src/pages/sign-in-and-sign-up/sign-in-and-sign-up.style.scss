@@ -1,0 +1,29 @@
+.sign-in-and-sign-up {
+  background-color: rgb(24, 25, 26);
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  @media screen and (max-width: 680px) {
+    .left-animation-container {
+      display: none;
+    }
+  }
+
+  .left-animation-container {
+    background-color: violet;
+    width: 45%;
+    height: 100%;
+  }
+  .right-form-container {
+    background-color: rgb(36, 37, 39);
+    min-width: 450px;
+    max-width: 555px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

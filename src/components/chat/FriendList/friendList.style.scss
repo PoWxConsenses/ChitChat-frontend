@@ -1,0 +1,33 @@
+.left-chat-page {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .left-header {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: wheat;
+    .friend-filter {
+      width: 90%;
+      height: 70%;
+      border-radius: 10px;
+      text-decoration: none;
+      outline: none;
+      border-width: 0;
+      background-color: rgb(13, 35, 87);
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 18px;
+      color: wheat;
+      font-family: cursive;
+      &:focus {
+        background-color: rgb(22, 46, 102);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.friend-connect {
+  width: 100%;
+  background-color: rgb(4, 28, 83);
+  min-height: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  .friend-header {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    width: calc(100% - 10px);
+    align-items: center;
+    .span {
+      font-size: 1.5vw;
+    }
+  }
+  .no-friend-request {
+    font-size: 1.4vw;
+    font-family: cursive;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+}

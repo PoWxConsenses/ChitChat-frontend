@@ -1,0 +1,41 @@
+.friends-page {
+  width: calc(100% - 40px);
+  height: calc(100% - 55px);
+  padding: 20px;
+  background-color: rgb(6, 16, 39);
+  display: flex;
+  color: wheat;
+  .left-block {
+    height: calc(100vh - 55px);
+    background-color: rgb(9, 21, 48);
+    width: 300px;
+    border-radius: 10px;
+    min-width: 280px;
+    margin: 0 10px;
+    position: fixed;
+    .manage-net {
+      font-size: 1.3vw;
+      padding: 10px;
+    }
+    .list-options {
+      .option {
+        height: 30px;
+        padding: 10px;
+        font-size: 1.3vw;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(19, 53, 133);
+        }
+      }
+    }
+  }
+  .right-block {
+    width: calc(100% - 335px);
+    height: 100%;
+    margin-left: auto;
+    border-radius: 10px;
+    order: 2;
+    overflow-y: auto;
+    background-color: rgb(9, 21, 48);
+  }
+}

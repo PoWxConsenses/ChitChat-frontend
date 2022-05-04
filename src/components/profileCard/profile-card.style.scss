@@ -1,0 +1,67 @@
+.inner-profile-card {
+  width: 200px;
+  border-radius: 8px;
+  height: 250px;
+  background-color: rgb(19, 53, 133);
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: wheat;
+  .cover-photo {
+    width: 100%;
+    height: 65px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rosybrown;
+  }
+  .user-photo-container {
+    margin-top: -40px;
+  }
+  .userName {
+    font-size: 1.5vw;
+    color: wheat;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      transform: scale(1.01);
+    }
+    &:active {
+      color: red;
+    }
+  }
+  .user-org {
+    font-size: 1vw;
+    opacity: 0.8;
+    padding-left: 30px;
+    padding-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 38px;
+  }
+  .mutuals {
+    font-size: 1vw;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 45px;
+  }
+  .connect {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 70%;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.1vw;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+    background-color: rgb(5, 29, 83);
+    &:hover {
+      background-color: rgb(31, 69, 156);
+    }
+  }
+}

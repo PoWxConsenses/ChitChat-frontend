@@ -1,0 +1,24 @@
+.comment {
+  .comment-form {
+    background-color: #2b6777;
+    height: 40px;
+    width: calc(100% - 16px);
+    padding: 1px 8px 1px 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .comment-input {
+      margin-left: 15px;
+      width: calc(100% - 60px);
+      height: calc(100% - 10px);
+      border-radius: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-style: none;
+      border-width: 1px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

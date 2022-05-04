@@ -1,0 +1,60 @@
+.carousel-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .text-content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #f9d423,
+      #ff4e50
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #f9d423,
+      #ff4e50
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .text-content {
+      font-size: 2vw;
+      color: whitesmoke;
+    }
+  }
+  .carousel-common {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    .plus-element {
+      position: absolute;
+      top: 10px;
+      color: red;
+    }
+    .arrow {
+      height: 30px;
+      width: 30px;
+      opacity: 0.3;
+      color: red;
+      cursor: pointer;
+    }
+  }
+  .carousel-right {
+    right: 0;
+  }
+  .carousel-left {
+    left: 0;
+  }
+  &:hover {
+    .arrow {
+      opacity: 1;
+    }
+  }
+}

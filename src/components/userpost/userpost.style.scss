@@ -1,0 +1,95 @@
+.user-post {
+  height: auto;
+  background-color: #2b6777;
+  min-width: calc(100% - 20px);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: wheat;
+  .post-container {
+    width: 100%;
+    padding: 5px 10px 0px 10px;
+    .header-seperator {
+      width: calc(100% - 13px);
+      margin: 0 0 0 -4px;
+      left: 0;
+    }
+    .post-header {
+      height: 70px;
+      width: 100%;
+      margin-left: -10px;
+      display: flex;
+      align-items: center;
+
+      .user-img-container {
+        padding: 5px 10px 5px 10px;
+        height: calc(100% - 10px);
+      }
+      .header-details {
+        height: calc(100% - 10px);
+        width: calc(100% - 100px);
+        padding: 8px 5px 2px 8px;
+        .author {
+          font-size: 1.5vw;
+        }
+        .author-at {
+        }
+      }
+      .header-right {
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 5px 0px 5px;
+        position: relative;
+        .userpost-dropdown {
+          z-index: 1;
+          position: absolute;
+          height: auto;
+          width: 150px;
+          margin-top: 150px;
+          background-color: #275c69;
+          margin-right: 115px;
+          border-radius: 10px 0px 10px 10px;
+          color: wheat;
+          padding: 10px 0px 10px 0px;
+          .dw-section {
+            width: 100%;
+            height: 40px;
+            font-size: 1.3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(31, 61, 133);
+            }
+          }
+        }
+        .three-dots {
+          font-size: 30px;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(14, 41, 105);
+          }
+        }
+        .three-dots-active {
+          background-color: rgb(14, 41, 105);
+        }
+      }
+    }
+    .post-content {
+      width: 100%;
+      margin-left: -10px;
+      height: auto;
+      .text-content {
+        height: auto;
+        padding: 10px;
+      }
+    }
+  }
+}

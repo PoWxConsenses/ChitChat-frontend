@@ -1,0 +1,48 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .signup-text {
+    font-size: 3vw;
+    color: white;
+  }
+  .signin-mssg {
+    display: flex;
+    color: white;
+    .switch-to-signin {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .login-form {
+    width: 70%;
+
+    .first-last-name {
+      display: flex;
+
+      .group {
+        .form-input {
+          margin-bottom: -5px;
+          margin-top: -5px;
+        }
+      }
+    }
+    .submitBtn {
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 15px;
+      font-size: 1.2vw;
+      outline: none;
+      cursor: pointer;
+      background-color: rgb(190, 195, 204);
+      &:hover {
+        background-color: blueviolet;
+      }
+    }
+  }
+}

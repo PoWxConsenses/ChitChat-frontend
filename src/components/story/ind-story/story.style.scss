@@ -1,0 +1,99 @@
+.story {
+  height: 100%;
+  min-width: 125px !important;
+  max-width: 15px !important;
+  border-radius: 5px;
+  margin: 0px 5px 0px 5px;
+  flex: 1;
+  transition: all 1s ease;
+  background: #ff4e50;
+  background: -webkit-linear-gradient(to left, #f9d423, #ff4e50);
+  background: linear-gradient(to left, #f9d423, #ff4e50);
+
+  cursor: pointer;
+  .story-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .text-content {
+      width: 100%;
+      font-size: 18px;
+      position: relative;
+      height: auto;
+      word-wrap: break-word;
+      font-weight: 400;
+      color: rgb(185, 14, 14);
+    }
+    .story-author-profile-img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      margin: 5px 5px 0px 0px;
+      display: flex;
+      transition: ease-in-out 1s;
+      justify-content: end;
+      .status-bar {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        .bar {
+          top: 0;
+          right: 0;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+          position: absolute;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  .over-img-or-video {
+    height: 100%;
+    width: 100%;
+    // color: wheat;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .story-commone {
+      bottom: 0;
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    .story-add-btn {
+      margin-bottom: 30px;
+      font-size: 40px;
+      transition: ease-in-out 1s;
+      opacity: 0.85;
+      color: black;
+      &:hover {
+        opacity: 1;
+        font-size: 42px;
+      }
+    }
+    .story-author-name {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0 0 3px 0px;
+      &:hover {
+        text-decoration: underline solid black;
+      }
+    }
+  }
+  &:hover {
+    // height: calc(100% + 5px);
+    // width: 127px;
+  }
+}

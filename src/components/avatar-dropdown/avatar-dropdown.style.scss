@@ -1,0 +1,59 @@
+.avatar-dropdown {
+  position: absolute;
+  min-width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(14, 41, 105);
+  top: 58px;
+  right: 20px;
+  z-index: 5;
+  color: wheat;
+  .user-profile-dropdown {
+    height: 70px;
+    width: calc(100% - 16px);
+    display: flex;
+    padding: 15px 8px 10px 8px;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    .here-container {
+      display: flex;
+      span {
+        font-size: 1.3vw;
+        margin: 5px 0px 0px 5px;
+        font-weight: 500;
+      }
+    }
+    .to-profile {
+      margin-top: 5px;
+      width: calc(100% - 10px);
+      border-radius: 10px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      background-color: rgb(4, 31, 95);
+      border: 1px solid wheat;
+      &:hover {
+        background-color: rgb(19, 53, 133);
+      }
+    }
+  }
+  .dropdown-item {
+    height: 35px;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    &:hover {
+      background-color: rgb(19, 53, 133);
+    }
+  }
+}

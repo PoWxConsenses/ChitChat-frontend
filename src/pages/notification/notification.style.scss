@@ -1,0 +1,57 @@
+.notification-page {
+  background-color: rgb(6, 16, 39);
+  width: 100%;
+  height: calc(100% - 55px);
+  .notifications {
+    background-color: yellow;
+    width: 560px;
+    margin: 0 auto;
+    min-width: 500px;
+    height: auto;
+    min-height: 100%;
+    .notification {
+      height: 80px;
+      background-color: orange;
+      width: calc(100% - 20px);
+      padding: 10px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-style: solid;
+      display: flex;
+      .notification-img-container {
+        float: left;
+        width: 100px;
+        height: 100%;
+      }
+      .content {
+        width: calc(100% - 150px);
+        background-color: blanchedalmond;
+      }
+      .noti-options {
+        float: right;
+        width: 50px;
+        background-color: blue;
+        height: 100%;
+        .noti-option {
+          height: 50%;
+          font-size: 2vw;
+          color: black;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: blueviolet;
+        }
+        .noti-time {
+          height: 50%;
+          width: 1vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: coral;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

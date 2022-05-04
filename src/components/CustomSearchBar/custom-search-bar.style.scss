@@ -1,0 +1,24 @@
+.search-bar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .search-input {
+    align-self: center;
+    height: 70%;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    line-height: 90%;
+    font-size: 14px;
+    border: 1px solid black;
+    &:focus {
+      outline: blueviolet solid 1.1px;
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .search-bar {
+    display: none;
+  }
+}

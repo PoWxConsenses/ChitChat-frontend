@@ -1,0 +1,11 @@
+.chat-page {
+  background-color: rgb(6, 16, 39);
+  width: 100%;
+  height: calc(100% - 55px);
+  color: wheat;
+  .inner-block {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+}

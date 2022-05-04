@@ -1,0 +1,26 @@
+.right-chat-page {
+  width: 68%;
+  height: 100%;
+  .chat-right-header {
+    width: calc(100% - 20px);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
+  }
+  .user-friend-chat {
+    height: calc(100% - 115px);
+    width: calc(100% - 20px);
+    background-color: rgb(9, 21, 48);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px 10px 0px 10px;
+  }
+  .chat-right-bottom {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

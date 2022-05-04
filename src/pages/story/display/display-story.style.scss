@@ -1,0 +1,64 @@
+.display-story-page {
+  height: calc(100% - 55px) !important;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  .user-story-view {
+    width: 75%;
+    height: calc(100% - 40px);
+    background-color: yellow;
+    padding: 20px;
+    .user-story-box {
+      border-radius: 20px;
+      background-color: red;
+      padding: 20px;
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .story-mediaContent-carousel {
+        height: 100%;
+        padding: 10px 0px 10px 0px;
+
+        width: 40%;
+        background-color: saddlebrown;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .story-mediaContent-header {
+          position: absolute;
+          height: 50px;
+          width: calc(100% - 10px);
+          z-index: 1;
+          top: 0;
+          padding: 5px;
+          border-radius: 10px 10px 0px 0px;
+          display: flex;
+          align-items: center;
+
+          .story-poster-avatar {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+          }
+          .story-author-name {
+            font-size: 18px;
+            color: rgb(61, 42, 6);
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .user-story-options {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    background-color: yellowgreen;
+  }
+}

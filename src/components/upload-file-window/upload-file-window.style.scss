@@ -1,0 +1,95 @@
+.file-upload-window {
+  position: absolute;
+  height: calc(100% - 55px);
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  overflow: auto;
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inner-window {
+    min-width: 500px;
+    max-width: 660px;
+    min-height: 400px;
+    max-height: auto;
+    background-color: yellow;
+    position: relative;
+    .window-header {
+      height: 40px;
+      font-size: 18px;
+      width: calc(100% - 20px);
+      background-color: red;
+      display: flex;
+      align-items: center;
+      padding: 0px 10px 0px 10px;
+      position: relative;
+      .close-upload-file-window {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        * {
+          height: 100%;
+          width: 100%;
+          float: right;
+        }
+      }
+    }
+    .window-center {
+      width: calc(100% - 20px);
+      padding: 0px 10px 0px 10px;
+      height: calc(100% - 80px);
+      position: absolute;
+      background-color: khaki;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .uploaded-files {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(24, 21, 21);
+        img {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+      }
+      .upload-file {
+        background-color: blue;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .window-footer {
+      position: absolute;
+      bottom: 0;
+      height: 40px;
+      font-size: 18px;
+      width: 100%;
+      display: flex;
+      background-color: red;
+      align-items: center;
+      .upload-btn {
+        position: inherit;
+        right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        width: 70px;
+        height: 25px;
+        background-color: blue;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 3px;
+      }
+    }
+  }
+}

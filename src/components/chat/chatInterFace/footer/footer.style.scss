@@ -1,0 +1,22 @@
+.inner-chat-right-bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .chat-input {
+    width: calc(100% - 120px);
+    height: 80%;
+    border-radius: 20px;
+    outline: none;
+    border-width: 1px;
+    padding: 10px;
+  }
+  .chat-right-send {
+    font-size: 40px;
+    cursor: pointer;
+    &:hover {
+      color: rgb(14, 41, 105);
+    }
+  }
+}

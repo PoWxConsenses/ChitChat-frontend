@@ -1,0 +1,65 @@
+$sub-color: white;
+$main-color: black;
+
+@mixin shrinkLabel {
+  top: 0;
+  font-size: 10px;
+  color: $sub-color;
+}
+
+.group {
+  position: relative;
+  width: 100%;
+  height: auto;
+  .form-input {
+    background-color: white;
+    color: $sub-color;
+    font-size: 17px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid $sub-color;
+    margin: 15px 0;
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
+    }
+  }
+
+  input[type="password"] {
+    letter-spacing: 0.3em;
+    background-color: grey;
+  }
+  input[type="email"] {
+    background-color: grey;
+  }
+  input[type="text"] {
+    background-color: grey;
+    color: white;
+  }
+  input[type="date"] {
+    &::-webkit-calendar-picker-indicator {
+      width: 40px;
+    }
+  }
+
+  .form-input-label {
+    color: $sub-color;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: calc(50% - 10px);
+    transition: 300ms ease all;
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}

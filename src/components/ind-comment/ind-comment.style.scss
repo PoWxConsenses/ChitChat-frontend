@@ -1,0 +1,60 @@
+.commentBox {
+  background-color: rgb(4, 28, 83);
+  width: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  .textContent {
+    font-size: 1.3vw;
+    background-color: rgb(14, 41, 105);
+    border-radius: 10px;
+    width: calc(100% - 100px);
+    font-family: cursive;
+    font-weight: 300;
+    margin-left: 12px;
+    min-height: calc(80% - 20px);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+  .comment-options {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .comment-dropdown {
+      position: absolute;
+      height: auto;
+      width: 150px;
+      margin-top: 80px;
+      background-color: rgb(14, 41, 105);
+      margin-right: 120px;
+      border-radius: 8px 0px 8px 8px;
+      color: wheat;
+      padding: 8px 0px 8px 0px;
+      .dw-section {
+        width: 100%;
+        height: 20px;
+        font-size: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(19, 53, 133);
+        }
+      }
+    }
+    &:hover {
+      background-color: rgb(14, 41, 105);
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.emoji-picker {
+  height: 100%;
+  width: 60px;
+  position: relative;
+  display: flex;
+  .emoji-selector-box {
+    position: absolute;
+    bottom: 60px;
+  }
+  .emoji-picker-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .gr-emoji {
+      height: 80%;
+      cursor: pointer;
+      width: 90%;
+    }
+  }
+}
